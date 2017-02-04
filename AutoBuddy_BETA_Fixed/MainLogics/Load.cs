@@ -256,7 +256,7 @@ namespace AutoBuddy.MainLogics
             currentLogic.pushLogic.Reset(ally, enemy, l);
         }
 
-        private void SelectLane()
+        /* private void SelectLane()
         {
             status = "selected free lane";
             var list = GetChampLanes();
@@ -284,7 +284,7 @@ namespace AutoBuddy.MainLogics
                     Lane.Top);
             }
         }
-
+*/
         private static List<ChampLane> GetChampLanes(float maxDistance = 2000, float maxDistanceFront = 3000)
         {
             var top1 =
