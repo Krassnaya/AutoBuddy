@@ -127,7 +127,7 @@ namespace AutoBuddy.MainLogics
         {
             waiting = true;
             status = "Looking for free lane, time left " + (int)(startTime - Game.Time);
-            if (Game.Time > startTime || GetChampLanes().All(cl => cl.lane != Lane.top))
+            if (Game.Time > startTime || GetChampLanes().All(cl => cl.lane != Lane.Unknown))
             {
                 waiting = false;
                 SelectLane();
@@ -138,7 +138,7 @@ namespace AutoBuddy.MainLogics
             }
         }
 
-        private void SelectMostPushedLane()
+        /* private void SelectMostPushedLane()
         {
             status = "selected most pushed lane";
             var nMyNexus = ObjectManager.Get<Obj_HQ>().First(hq => hq.IsEnemy);
@@ -191,7 +191,7 @@ namespace AutoBuddy.MainLogics
 
             currentLogic.pushLogic.Reset(ally, enemy, andrzej.GetLane());
         }
-
+        */
         public void SelectLane2(Lane l)
         {
             status = "selected " + l;
