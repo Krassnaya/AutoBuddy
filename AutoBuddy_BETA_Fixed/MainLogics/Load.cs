@@ -127,9 +127,9 @@ namespace AutoBuddy.MainLogics
         {
             waiting = true;
             status = "Looking for free lane, time left " + (int)(startTime - Game.Time);
-            if (Game.Time > startTime || GetChampLanes().All(cl => cl.lane != Lane.Unknown))
+            if (Game.Time > startTime || GetChampLanes().All(cl => cl.lane != Lane.top))
             {
-                waiting = true;
+                waiting = false;
                 SelectLane();
             }
             else
