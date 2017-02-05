@@ -69,7 +69,7 @@ namespace AutoBuddy.MainLogics
         {
             Drawing.DrawText(250, 70, Color.Gold, "Lane selector status: " + status);
         }
-/*
+
         public void Activate()
         {
         }
@@ -92,7 +92,7 @@ namespace AutoBuddy.MainLogics
                 }
                 return;
             }
-*/
+
             if (ObjectManager.Get<Obj_AI_Turret>().Count() == 24)
             {
                 if (AutoWalker.p.Gold < 550 && MainMenu.GetMenu("AB").Get<CheckBox>("mid").CurrentValue)
