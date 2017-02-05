@@ -137,8 +137,8 @@ namespace AutoBuddy.MainLogics
                 Core.DelayAction(CanSelectLane, 500);
             }
         }
-/*
-        private void SelectMostPushedLane()
+
+         private void SelectMostPushedLane()
         {
             status = "selected most pushed lane";
             var nMyNexus = ObjectManager.Get<Obj_HQ>().First(hq => hq.IsEnemy);
@@ -255,7 +255,7 @@ namespace AutoBuddy.MainLogics
 
             currentLogic.pushLogic.Reset(ally, enemy, l);
         }
-*/
+
         private void SelectLane()
         {
             status = "selected free lane";
