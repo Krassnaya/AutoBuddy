@@ -39,7 +39,7 @@ namespace AutoBuddy.MainLogics
             lastSliderSwitch = Game.Time + 1;
             handleSlider();
         }
-/*
+
         private void handleSlider(bool x = true)
         {
             if (waitingSlider && x) return;
@@ -69,7 +69,7 @@ namespace AutoBuddy.MainLogics
         {
             Drawing.DrawText(250, 70, Color.Gold, "Lane selector status: " + status);
         }
-
+/*
         public void Activate()
         {
         }
@@ -92,7 +92,7 @@ namespace AutoBuddy.MainLogics
                 }
                 return;
             }
-
+*/
             if (ObjectManager.Get<Obj_AI_Turret>().Count() == 24)
             {
                 if (AutoWalker.p.Gold < 550 && MainMenu.GetMenu("AB").Get<CheckBox>("mid").CurrentValue)
@@ -284,7 +284,7 @@ namespace AutoBuddy.MainLogics
                     Lane.Top);
             }
         }
-*/
+
         private static List<ChampLane> GetChampLanes(float maxDistance = 2000, float maxDistanceFront = 3000)
         {
             var top1 =
