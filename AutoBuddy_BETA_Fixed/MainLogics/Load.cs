@@ -93,7 +93,7 @@ namespace AutoBuddy.MainLogics
                 return;
             }
 
-            if (ObjectManager.Get<Obj_AI_Turret>().Count() == 24)
+           /* if (ObjectManager.Get<Obj_AI_Turret>().Count() == 24)
             {
                 if (AutoWalker.p.Gold < 550 && MainMenu.GetMenu("AB").Get<CheckBox>("mid").CurrentValue)
                 {
@@ -117,6 +117,7 @@ namespace AutoBuddy.MainLogics
             {
                 SelectMostPushedLane();
             }
+            */
         }
 
         public void Deactivate()
