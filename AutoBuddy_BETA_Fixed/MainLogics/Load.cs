@@ -260,7 +260,7 @@ namespace AutoBuddy.MainLogics
         {
             status = "selected free lane";
             var list = GetChampLanes();
-            if (list.All(cl => cl.lane != Lane.Mid))
+           /* if (list.All(cl => cl.lane != Lane.Mid))
             {
                 currentLogic.pushLogic.Reset(
                     ObjectManager.Get<Obj_AI_Turret>().First(tur => tur.IsAlly && tur.Name.EndsWith("C_05_A")),
@@ -275,7 +275,7 @@ namespace AutoBuddy.MainLogics
                     ObjectManager.Get<Obj_AI_Turret>().First(tur => tur.IsEnemy && tur.Name.EndsWith("R_03_A")),
                     Lane.Bot);
                 return;
-            }
+           */ }
             if (list.Count(cl => cl.lane == Lane.Top) < 2)
             {
                 currentLogic.pushLogic.Reset(
