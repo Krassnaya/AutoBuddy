@@ -137,7 +137,7 @@ namespace AutoBuddy.MainLogics
                 Core.DelayAction(CanSelectLane, 500);
             }
         }
-
+/*
         private void SelectMostPushedLane()
         {
             status = "selected most pushed lane";
@@ -255,7 +255,7 @@ namespace AutoBuddy.MainLogics
 
             currentLogic.pushLogic.Reset(ally, enemy, l);
         }
-
+*/
         private void SelectLane()
         {
             status = "selected free lane";
