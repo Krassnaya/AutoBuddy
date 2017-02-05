@@ -285,7 +285,7 @@ namespace AutoBuddy.MainLogics
             }
         }
 
-        private static List<ChampLane> GetChampLanes(float maxDistance = 2000, float maxDistanceFront = 3000)
+     //   private static List<ChampLane> GetChampLanes(float maxDistance = 2000, float maxDistanceFront = 3000)
         {
             var top1 =
                 ObjectManager.Get<Obj_AI_Turret>().First(tur => tur.IsAlly && tur.Name.EndsWith("L_03_A"));
@@ -304,11 +304,11 @@ namespace AutoBuddy.MainLogics
 
             foreach (var h in EntityManager.Heroes.Allies.Where(hero => hero.IsAlly && !hero.IsMe))
             {
-                var lane = Lane.Unknown;
-                if (h.Distance(top1) < maxDistanceFront || h.Distance(top2) < maxDistance) lane = Lane.Top;
-                if (h.Distance(mid1) < maxDistanceFront || h.Distance(mid2) < maxDistance) lane = Lane.Mid;
-                if (h.Distance(bot1) < maxDistanceFront || h.Distance(bot2) < maxDistance) lane = Lane.Bot;
-                ret.Add(new ChampLane(h, lane));
+             //   var lane = Lane.Unknown;
+               // if (h.Distance(top1) < maxDistanceFront || h.Distance(top2) < maxDistance) lane = Lane.Top;
+              //  if (h.Distance(mid1) < maxDistanceFront || h.Distance(mid2) < maxDistance) lane = Lane.Mid;
+            //    if (h.Distance(bot1) < maxDistanceFront || h.Distance(bot2) < maxDistance) lane = Lane.Bot;
+             //   ret.Add(new ChampLane(h, lane));
             }
             return ret;
         }
