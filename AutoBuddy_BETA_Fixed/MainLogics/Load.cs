@@ -39,7 +39,7 @@ namespace AutoBuddy.MainLogics
             lastSliderSwitch = Game.Time + 1;
             handleSlider();
         }
-
+/*
         private void handleSlider(bool x = true)
         {
             if (waitingSlider && x) return;
@@ -284,7 +284,7 @@ namespace AutoBuddy.MainLogics
                     Lane.Top);
             }
         }
-
+*/
         private static List<ChampLane> GetChampLanes(float maxDistance = 2000, float maxDistanceFront = 3000)
         {
             var top1 =
